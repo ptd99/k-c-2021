@@ -28,13 +28,30 @@
         If you have a Kakao Account, log in with your email or phone number.
       </p>
     </header>
-    <form id="login-form">
-      <input type="text" placeholder="Email or phone number" />
-      <input type="password" placeholder="Password" />
-      <input type="submit" value="Log In" />
-      <input type="submit" value="Sign Up" />
-      <a href="#">Find Kakao Account or Password</a>
+    <!--'GET' method is not secure-->
+    <form action="friends.html" method="GET" class="login__form">
+      <input
+        class="login__input"
+        name="username"
+        required
+        type="text"
+        placeholder="Email or phone number"
+      />
+      <input
+        class="login__input"
+        name="password"
+        required
+        type="password"
+        placeholder="Password"
+      />
+      <input class="login__btn" type="submit" value="Log In" />
+      <input class="login__btn" type="submit" value="Sign Up" />
+      <a class="login__a" href="#">Find Kakao Account or Password</a>
     </form>
+    <div id="no-moblie">
+      <span>"Your Screen is too big"</span>
+    </div>
+    <!--Where the beautiful emojis come from-->
     <script
       src="https:///kit.fontawesome.com/6478f529f2.js"
       crossorigin="anonymous"

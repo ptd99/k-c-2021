@@ -1,0 +1,70 @@
+.nav {
+  background-color: #f9f9fa;
+  bottom: 0;
+  width: 100%;
+  padding: 10px 50px;
+  /*Do not modify the size of the box*/
+  box-sizing: border-box;
+  border-top: 1px solid rgba(0, 0, 0, 0.3);
+  position: fixed;
+}
+
+.nav__list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav__link {
+  color: #2e363e;
+  /*To make the notification icon having the absolute position*/
+  position: relative;
+}
+
+.nav__notification {
+  position: absolute;
+  left: 20px;
+  bottom: 15px;
+  animation: notificationanimation 2s ease-in-out infinite;
+}
+
+@keyframes notificationanimation {
+  0% {
+    transform: none;
+  }
+  50% {
+    transform: translateY(-5px) rotateY(180deg);
+  }
+  100% {
+    transform: none;
+  }
+}
+
+.nav__ellipsisnote {
+  top: -10px;
+  right: -5px;
+}
+
+@keyframes appearBtnanimation {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.nav__btn {
+  transform: translateY(50px);
+  opacity: 0;
+  animation: appearBtnanimation 0.5s ease-in-out forwards;
+}
+.nav__btn:nth-child(2) {
+  animation-delay: 0.3s;
+}
+.nav__btn:nth-child(3) {
+  animation-delay: 0.6s;
+}
+.nav__btn:last-child {
+  animation-delay: 0.9s;
+}

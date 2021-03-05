@@ -1,0 +1,35 @@
+.alt-header {
+  display: flex;
+  align-items: center;
+  padding: 35px 30px;
+}
+
+.alt-header__title {
+  font-size: 28px;
+  font-weight: 600;
+}
+
+/* --For locating the name "exactly" in the middle*/
+.alt-header__column {
+  width: 33%;
+}
+
+.alt-header__column:first-child {
+  margin-right: auto;
+}
+
+/* --For locating the name "exactly" in the middle*/
+.alt-header__column:nth-child(2) {
+  text-align: center;
+}
+
+.alt-header__column:last-child {
+  margin-left: auto;
+  /* --For locating the name "exactly" in the middle*/
+  display: flex;
+  justify-content: flex-end;
+}
+
+.alt-header__column span:last-child {
+  margin-left: 20px;
+}
